@@ -46,8 +46,11 @@ const Signup = (props) => {
             alert('이메일 형식에 맞게 입력해주세요')
         }
 
+        console.log(e.target[0].value, e.target[1].value,
+            e.target[2].value, e.target[3].value, e.target[4].value
+            , e.target[5].value, e.target[6].value, e.target[7].value)
         toast.success("signup : you're done!!")
-        await apiInstance.post('/register', {
+        await apiInstance.post('/Signup', {
             id: e.target[0].value,
             pw: e.target[1].value,
             pwcheck: e.target[2].value,

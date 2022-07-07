@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {})
 
-app.post('/register', (req, res) => {
+app.post('/Signup', (req, res) => {
     const { id, pw, pwcheck, email, name, phone, address, country } = req.body
     if (
         !id ||
